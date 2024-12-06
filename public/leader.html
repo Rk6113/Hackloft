@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Learn Practice Solve</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="problems.html">Problems</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="leader.html">LeaderBoard</a></li>
+                <li><a href="logout.html" class="logout-btn">Logout</a></li>
+            </ul>
+        </nav>
+        <h1>Leaderboard</h1>
+    </header>
+    <main>
+        <table id="leaderboard-table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                    <th>Challenge</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Leaderboard rows will be populated here by JavaScript -->
+            </tbody>
+        </table>
+       <!-- Add this modal HTML inside your main tag or at the end of your body tag -->
+<div id="challengeModal" style="display:none;">
+    <h2 id="challengeHeader">Challenge User</h2>
+    <select id="problemSelect">
+        <!-- Problem options will be populated here -->
+    </select>
+    <button id="submitChallenge">Send Challenge</button>
+    <button onclick="document.getElementById('challengeModal').style.display='none';">Cancel</button>
+</div>
+
+    </main>
+    <script src="js/leaderboard.js"></script>
+</body>
+</html>
